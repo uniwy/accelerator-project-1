@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  font-family: "RobotoCondensed", sans-serif;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $base-color-text;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
