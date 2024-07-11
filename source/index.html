@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SUPERGYM</title>
     <link rel="stylesheet" href="sass/style.scss">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicons/180.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
 
   <body class="page-body">
@@ -32,12 +36,12 @@
           <p class="hero__description">Тренажёрный зал<br>Групповые занятия<br>Кардио-зона</p>
           <h1 class="hero__title">Фитнес центр</h1>
             <picture>
-               <!--<source type="image/webp" media="(min-width: 1440px)" srcset="images/hero/can-desktop@1x.webp 1x, images/hero/can-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="images/hero/can-tablet@1x.webp 1x, images/hero/can-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="images/hero/can-mobile@1x.webp 1x, images/hero/can-mobile@2x.webp 2x">
-              <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/hero/can-desktop@1x.png 1x, images/hero/can-desktop@2x.png 2x">
-              <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/hero/can-tablet@1x.png 1x, images/hero/can-tablet@2x.png 2x">-->
-              <img class="hero__image" src="images/hero/can-mobile@1x.png" srcset="images/hero/can-mobile@2x.png 2x" width="280" height="270" alt="Фото тренера.">
+              <!-- <source type="image/webp" media="(min-width: 1366px)" srcset="img/hero/hero_desktop@1x.webp 1x, img/hero/hero_desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/hero/hero_tablet@1x.webp 1x, img/hero/hero_tablet@2x.webp 2x"> -->
+
+              <source width="500" height="524" type="image/jpeg" media="(min-width: 1366px)" srcset="img/hero/hero_desktop@1x.jpg 1x, img/hero/hero_desktop@2x.jpg 2x">
+              <source width="324" height="390" type="image/jpeg" media="(min-width: 768px)" srcset="img/hero/hero_tablet@1x.jpg 1x, img/hero/hero_tablet@2x.jpg 2x">
+              <img class="hero__image" src="img/hero/hero_tablet@1x.jpg" srcset="img/hero/hero_tablet@2x.jpg 2x" width="324" height="390" alt="Фото тренера.">
             </picture>
             <a class="hero__button button" href="#abonements">Купить абонемент</a>
         </div>
@@ -48,7 +52,11 @@
           <h2 class="about__title">Тренажёрный зал</h2>
           <p class="about__desc">Просторный зал площадью 900 кв/м</p>
         </div>
-        <img class="about__image" alt="Фото зала SUPERGYM.">
+        <picture>
+          <source width="660" height="400" type="image/jpeg" media="(min-width: 1366px)" srcset="img/about/main_desktop@1x.jpg 1x, img/about/main_desktop@2x.jpg 2x">
+          <source width="678" height="345" type="image/jpeg" media="(min-width: 768px)" srcset="img/about/main_tablet@1x.jpg 1x, img/about/main_tablet@2x.jpg 2x">
+          <img class="about__image" src="img/about/main_mobile@1x.jpg" srcset="img/about/main_mobile@2x.jpg 2x" width="320" height="280"  alt="Фото зала SUPERGYM.">
+        </picture>
         <iframe>video</iframe>
       </section>
 
@@ -82,6 +90,7 @@
       </section>
 
       <section class="games" data-test="games">
+        <h2 class="games__title visually-hidden">SUPER GAMES</h2>
         <div class="games__wrapper">
           <p class="games__title">SUPER GAMES</p>
           <dl class="games__info">
@@ -100,15 +109,19 @@
           </dl>
         </div>
         <p class="games__subtitle">Ежегодные соревнования по CrossFit</p>
-        <img class="games__image" alt="Сильный удар спортсмена.">
+        <picture>
+          <source width="660" height="500" type="image/jpeg" media="(min-width: 1366px)" srcset="img/games/games_desktop@1x.jpg 1x, img/games/games_desktop@2x.jpg 2x">
+          <source width="378" height="348" type="image/jpeg" media="(min-width: 768px)" srcset="img/games/games_tablet@1x.jpg 1x, img/games/games_tablet@2x.jpg 2x">
+          <img class="games__image" src="img/games/games_mobile@1x.jpg" srcset="img/games/games_mobile@2x.jpg 2x" width="290" height="290"  alt="Сильный удар спортсмена.">
+        </picture>
       </section>
 
       <section class="juri" data-test="juri">
         <h2 class="juri__title">Жюри</h2>
-        <img class="juri__image" alt="Анна Павлова.">
-        <img class="juri__image" alt="Алексей Лавров.">
-        <img class="juri__image" alt="Александр Пашков.">
-        <img class="juri__image" alt="Мария Кетова.">
+        <img class="juri__image" src="img/juri/anna_pavlova@1x.jpg" srcset="img/juri/anna_pavlova@2x.jpg 2x" width="260" height="300"  alt="Анна Павлова.">
+        <img class="juri__image" src="img/juri/alex_lavrov@1x.jpg" srcset="img/juri/alex_lavrov@2x.jpg 2x" width="260" height="300"  alt="Алексей Лавров.">
+        <img class="juri__image" src="img/juri/alex_pashkov@1x.jpg" srcset="img/juri/alex_pashkov@2x.jpg 2x" width="260" height="300"  alt="Александр Пашков.">
+        <img class="juri__image" src="img/juri/mary_ketova@1x.jpg" srcset="img/juri/mary_ketova@2x.jpg 2x" width="260" height="300"  alt="Мария Кетова.">
       </section>
 
       <section class="features" data-test="features">
@@ -203,7 +216,11 @@
             <p class="offers__text">Безлимитный абонемент в тренажёрный зал</p>
             <a class="offers__button button" href="#">подробнее</a>
           </div>
-          <img class="offers__image" alt="Фото девушки SUPERGYM.">
+          <picture>
+            <source width="280" height="460" type="image/jpeg" media="(min-width: 1366px)" srcset="img/offers/girl_desktop@1x.jpg 1x, img/offers/girl_desktop@2x.jpg 2x">
+            <source width="400" height="462" type="image/jpeg" media="(min-width: 768px)" srcset="img/offers/girl_tablet@1x.jpg 1x, img/offers/girl_tablet@2x.jpg 2x">
+            <img class="offers__image" src="img/offers/girl_mobile@1x.jpg" srcset="img/offers/girl_mobile@2x.jpg 2x" width="320" height="360"  alt="Фото девушки SUPERGYM.">
+          </picture>
         </div>
         <ul class="offers__list">
           <li class="offers__item benefits">
@@ -255,9 +272,12 @@
       <section class="reviews" data-test="reviews">
         <h2 class="reviews__title">Отзывы</h2>
         <div class="reviews__wrapper">
-          <img class="reviews__image" alt="Фото Анна Орлова.">
+          <picture>
+            <source width="80" height="80" type="image/jpeg" media="(min-width: 768px)" srcset="img/reviews/anna_orlova_tablet@1x.jpg 1x, img/reviews/anna_orlova_tablet@2x.jpg 2x">
+            <img class="reviews__image" src="img/reviews/anna_orlova_mobile@1x.jpg" srcset="img/reviews/anna_orlova_mobile@2x.jpg 2x" width="68" height="68"  alt="Фото Анна Орлова.">
+          </picture>
           <h2 class="reviews__title">Анна Орлова</h2>
-          <quote class="reviews__desc">«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</quote>
+          <p class="reviews__desc">«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
         </div>
       </section>
 
@@ -301,7 +321,7 @@
       </section>
     </main>
 
-    <footer data-test="footer">
+    <footer class="footer" data-test="footer">
       <picture>
         <!--<source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-image-desktop.svg">
        <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-image-tablet.svg"> -->
