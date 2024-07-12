@@ -1,0 +1,36 @@
+.reviews__title {
+  font-family: $secondary-font;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 32;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 54px;
+    line-height: 54px;
+  }
+}
+
+.reviews__subtitle {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  color: $secondary-color-text;
+  background-color: aqua;
+
+  @media (min-width: $tablet-width) {
+    font-size: 22px;
+    line-height: 22px;
+  }
+}
+
+.reviews__desc {
+  font-weight: 300;
+  color: $secondary-color-text;
+  background-color: aqua;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

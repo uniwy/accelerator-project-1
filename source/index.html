@@ -55,7 +55,9 @@
       <section class="about" data-test="about">
         <div class="about__wrapper">
           <h2 class="about__title">Тренажёрный зал</h2>
-          <p class="about__desc">Просторный зал площадью 900 кв/м</p>
+          <p class="about__subtitle">Просторный зал площадью 900 кв/м</p>
+          <p class="about__description">Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажёрный зал оснащён всем необходимым современным оборудованием для всех спортсменов.
+            В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажёрами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
         </div>
         <picture>
           <source width="660" height="400" type="image/jpeg" media="(min-width: 1366px)" srcset="img/about/main_desktop@1x.jpg 1x, img/about/main_desktop@2x.jpg 2x">
@@ -68,26 +70,26 @@
       <section class="price" data-test="price">
         <h2 class="price__title">Абонементы</h2>
         <ul class="price__list">
-          <li class="price__item">1 месяц</li>
+          <li class="price__item price__item--current">1 месяц</li>
           <li class="price__item">6 месяцев</li>
           <li class="price__item">12 месяцев</li>
         </ul>
         <ul class="card">
           <li class="card__item">
             <h3 class="card__title">С тренером</h3>
-            <p class="card_desc">12 занятий</p>
+            <p class="card__desc">12 занятий</p>
             <p class="card__price">5000 P</p>
             <a class="card__button button" href="#">Купить абонемент</a>
           </li>
           <li class="card__item">
             <h3 class="card__title">Дневной</h3>
-            <p class="card_desc">с 8:00 до 17:00</p>
+            <p class="card__desc">с 8:00 до 17:00</p>
             <p class="card__price">1700 P</p>
             <a class="card__button button" href="#">Купить абонемент</a>
           </li>
           <li class="card__item">
             <h3 class="card__title">Полный день</h3>
-            <p class="card_desc">с 8:00 до 22:00</p>
+            <p class="card__desc">с 8:00 до 22:00</p>
             <p class="card__price">2700 P</p>
             <a class="card__button button" href="#">Купить абонемент</a>
           </li>
@@ -97,14 +99,15 @@
       <section class="games" data-test="games">
         <h2 class="games__title visually-hidden">SUPER GAMES</h2>
         <div class="games__wrapper">
-          <p class="games__title">SUPER GAMES</p>
+          <h3 class="games__title">SUPER GAMES</h3>
           <dl class="games__info">
             <dt class="games__text">
               Дата
             </dt>
             <dd class="games__description">
-              7 Марта 2019
+              7
             </dd>
+            <span class="games__desc">Марта 2019</span>
             <dt class="games__text">
               Время
             </dt>
@@ -114,6 +117,7 @@
           </dl>
         </div>
         <p class="games__subtitle">Ежегодные соревнования по CrossFit</p>
+        <a class="games__button button" href="#">заполнить заявку</a>
         <picture>
           <source width="660" height="500" type="image/jpeg" media="(min-width: 1366px)" srcset="img/games/games_desktop@1x.jpg 1x, img/games/games_desktop@2x.jpg 2x">
           <source width="378" height="348" type="image/jpeg" media="(min-width: 768px)" srcset="img/games/games_tablet@1x.jpg 1x, img/games/games_tablet@2x.jpg 2x">
@@ -165,7 +169,7 @@
             </dl>
           </li>
           <li class="features__item">
-            <dl class="features__info">
+            <dl class="features__info features__info--current">
               <dt class="features__number features__number--current">
                 100
               </dt>
@@ -257,19 +261,19 @@
             <p class="faq__tab">Правила</p>
           </li>
         </ul>
-        <ul class="faq__list-acc">
-          <li class="faq__item-acc">
-            <h3 class="faq__title-acc">Как стать членом фитнес-центра?</h3>
+        <ul class="faq__list-question">
+          <li class="faq__item-question">
+            <h3 class="faq__title-question">Как стать членом фитнес-центра?</h3>
             <p class="faq__text">При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
           </li>
-          <li class="faq__item-acc">
-            <h3 class="faq__title-acc">Где можно посмотреть расписание?</h3>
+          <li class="faq__item-question">
+            <h3 class="faq__title-question">Где можно посмотреть расписание?</h3>
           </li>
-          <li class="faq__item-acc">
-            <h3 class="faq__title-acc">Есть кулеры в центре? Предоставляются полотенца?</h3>
+          <li class="faq__item-question">
+            <h3 class="faq__title-question">Есть кулеры в центре? Предоставляются полотенца?</h3>
           </li>
-          <li class="faq__item-acc">
-            <h3 class="faq__title-acc">Сколько тренеров работает в клубе и какова их квалификация?</h3>
+          <li class="faq__item-question">
+            <h3 class="faq__title-question">Сколько тренеров работает в клубе и какова их квалификация?</h3>
           </li>
         </ul>
       </section>
@@ -281,7 +285,7 @@
             <source width="80" height="80" type="image/jpeg" media="(min-width: 768px)" srcset="img/reviews/anna_orlova_tablet@1x.jpg 1x, img/reviews/anna_orlova_tablet@2x.jpg 2x">
             <img class="reviews__image" src="img/reviews/anna_orlova_mobile@1x.jpg" srcset="img/reviews/anna_orlova_mobile@2x.jpg 2x" width="68" height="68"  alt="Фото Анна Орлова.">
           </picture>
-          <h2 class="reviews__title">Анна Орлова</h2>
+          <h2 class="reviews__subtitle">Анна Орлова</h2>
           <p class="reviews__desc">«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
         </div>
       </section>
@@ -320,7 +324,7 @@
           </li>
           <li class="contacts__item">
             <h3 class="contacts__subtitle">Email:</h3>
-            <a href="mailto:oмск@supergym.ru">oмск@supergym.ru</a>
+            <a class="contacts__email" href="mailto:oмск@supergym.ru">oмск@supergym.ru</a>
           </li>
         </ul>
       </section>
@@ -328,9 +332,9 @@
 
     <footer class="footer" data-test="footer">
       <picture>
-        <!--<source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-image-desktop.svg">
-       <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-image-tablet.svg"> -->
-       <img class="footer__logo" src="images/logo-image-mobile.svg" width="33" height="38" alt="Логотип SUPERGYM.">
+        <source width="130" height="26" type="image/svg+xml" media="(min-width: 1366px)" srcset="img/logo_desktop.svg">
+        <source width="110" height="22" type="image/svg+xml" media="(min-width: 768px)" srcset="img/logo_tablet.svg">
+        <img class="logo-nav__image" src="img/logo_mobile.svg" width="100" height="20" alt="Логотип SUPERGYM.">
       </picture>
       <nav class="footer-nav">
         <div class="footer-nav__wrapper container">
