@@ -1,16 +1,43 @@
+.contacts {
+  margin: 40px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 60px 0;
+  }
+}
+
 .contacts__title {
+  margin-top: 0;
+  margin-bottom: 42px;
   font-family: $secondary-font;
   font-weight: 600;
   font-size: 32px;
   line-height: 32px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 36px;
     font-size: 54px;
     line-height: 54px;
   }
 }
 
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+  }
+}
+
 .contacts__subtitle {
+  margin-top: 0;
+  margin-bottom: 12px;
   font-weight: 400;
   font-size: 20px;
   line-height: 20px;

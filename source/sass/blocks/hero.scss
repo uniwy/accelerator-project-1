@@ -1,37 +1,86 @@
 .hero {
-  background-color: bisque;
+  padding: 16px 15px 32px;
+  background: linear-gradient(to right, #1c3477 0%, #1c3477 0.01%, #1a3578 39.11%, #73184b 75.5%, #b4022a 100%);
+
+  @media (min-width: $tablet-width) {
+  padding: 30px 45px 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 30px 103px 120px;
+  }
+}
+
+.hero__wrapper {
+  @media (min-width: $tablet-width) {
+  display: flex;
+  justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: center;
+    gap: 56px;
+  }
+}
+
+.hero__container {
+  @media (min-width: $tablet-width) {
+    margin-top: 31px;
+    min-width: 324px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 52px;
+    min-width: 385px;
+  }
 }
 
 .hero__subtitle {
+  margin: 0 0 14px;
   font-family: $secondary-font;
   font-weight: 600;
   font-size: 32px;
   line-height: 32px;
   color: $secondary-color-text;
+  text-align: right;
 
   @media (min-width: $tablet-width) {
+    margin: 0 0 10px;
     font-size: 42px;
     line-height: 42px;
   }
 
   @media (min-width: $desktop-width) {
+    margin: 0 0 40px;
     font-size: 54px;
     line-height: 54px;
   }
 }
 
+.hero__desc {
+  display: flex;
+  justify-content: space-between;
+}
+
 .hero__description{
+  display: flex;
+  align-items: flex-end;
+  margin: 0 0 48px;
   font-weight: 400;
   line-height: 20px;
   text-align: right;
   color: $secondary-color-text;
 
   @media (min-width: $tablet-width) {
+    margin: 0;
+    align-items: center;
     line-height: 22px;
   }
 }
 
-.hero__title{
+.hero__title {
+  width: 156px;
+  margin: 0 0 48px;
   font-family: $secondary-font;
   font-weight: 800;
   font-size: 62px;
@@ -42,12 +91,16 @@
   color: $secondary-color-text;
 
   @media (min-width: $tablet-width) {
+    width: 185px;
+    margin: 0 0 50px;
     font-size: 72px;
     line-height: 85px;
     letter-spacing: 0.03em;
   }
 
   @media (min-width: $desktop-width) {
+    width: 270px;
+    margin: 0 0 40px;
     font-size: 92px;
     line-height: 110px;
     letter-spacing: 0.04em;
@@ -55,11 +108,21 @@
 }
 
 .hero__button {
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 12px;
-  text-align: center;
-  text-transform: uppercase;
-  color: $secondary-color-text;
-  text-decoration: none;
+  @media (min-width: $tablet-width) {
+    width: 185px;
+    margin-left: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 270px;
+  }
 }
+
+.hero__image {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+

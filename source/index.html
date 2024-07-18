@@ -33,91 +33,104 @@
             <source width="110" height="22" type="image/svg+xml" media="(min-width: 768px)" srcset="img/logo_tablet.svg">
             <img class="logo-nav__image" src="img/logo_mobile.svg" width="100" height="20" alt="Логотип SUPERGYM.">
           </picture>
-          <a class="logo-nav__tel" href="tel:+88005555555">8 800 555-55-55</a>
+          <a class="logo-nav__tel" href="tel:+88005555555">
+            <p class="logo-nav__text">800 555-55-55</p>
+          </a>
         </header>
 
         <div class="hero__wrapper container">
-          <p class="hero__subtitle">Омск</p>
-          <p class="hero__description">Тренажёрный зал<br>Групповые занятия<br>Кардио-зона</p>
-          <h1 class="hero__title">Фитнес центр</h1>
-            <picture>
+          <div class="hero__container">
+            <p class="hero__subtitle">Омск</p>
+            <div class="hero__desc">
+              <p class="hero__description">Тренажёрный зал<br>Групповые занятия<br>Кардио-зона</p>
+              <h1 class="hero__title">Фитнес центр</h1>
+            </div>
+            <a class="hero__button button" href="#abonements">Купить абонемент</a>
+          </div>
+          <picture>
               <!-- <source type="image/webp" media="(min-width: 1366px)" srcset="img/hero/hero_desktop@1x.webp 1x, img/hero/hero_desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/hero/hero_tablet@1x.webp 1x, img/hero/hero_tablet@2x.webp 2x"> -->
-
               <source width="500" height="524" type="image/jpeg" media="(min-width: 1366px)" srcset="img/hero/hero_desktop@1x.jpg 1x, img/hero/hero_desktop@2x.jpg 2x">
               <source width="324" height="390" type="image/jpeg" media="(min-width: 768px)" srcset="img/hero/hero_tablet@1x.jpg 1x, img/hero/hero_tablet@2x.jpg 2x">
               <img class="hero__image" src="img/hero/hero_tablet@1x.jpg" srcset="img/hero/hero_tablet@2x.jpg 2x" width="324" height="390" alt="Фото тренера.">
-            </picture>
-            <a class="hero__button button" href="#abonements">Купить абонемент</a>
+          </picture>
         </div>
       </section>
 
       <section class="about" data-test="about">
-        <div class="about__wrapper">
-          <h2 class="about__title">Тренажёрный зал</h2>
-          <p class="about__subtitle">Просторный зал площадью 900 кв/м</p>
-          <p class="about__description">Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажёрный зал оснащён всем необходимым современным оборудованием для всех спортсменов.
-            В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажёрами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+        <div class="about__container container">
+          <div class="about__wrapper">
+            <h2 class="about__title">Тренажёрный зал</h2>
+            <p class="about__subtitle">Просторный зал площадью 900 кв/м</p>
+            <p class="about__description">Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажёрный зал оснащён всем необходимым современным оборудованием для всех спортсменов.
+              В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажёрами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+          </div>
+          <picture>
+            <source width="660" height="400" type="image/jpeg" media="(min-width: 1366px)" srcset="img/about/main_desktop@1x.jpg 1x, img/about/main_desktop@2x.jpg 2x">
+            <source width="678" height="345" type="image/jpeg" media="(min-width: 768px)" srcset="img/about/main_tablet@1x.jpg 1x, img/about/main_tablet@2x.jpg 2x">
+            <img class="about__image" src="img/about/main_mobile@1x.jpg" srcset="img/about/main_mobile@2x.jpg 2x" width="320" height="280"  alt="Фото зала SUPERGYM.">
+          </picture>
         </div>
-        <picture>
-          <source width="660" height="400" type="image/jpeg" media="(min-width: 1366px)" srcset="img/about/main_desktop@1x.jpg 1x, img/about/main_desktop@2x.jpg 2x">
-          <source width="678" height="345" type="image/jpeg" media="(min-width: 768px)" srcset="img/about/main_tablet@1x.jpg 1x, img/about/main_tablet@2x.jpg 2x">
-          <img class="about__image" src="img/about/main_mobile@1x.jpg" srcset="img/about/main_mobile@2x.jpg 2x" width="320" height="280"  alt="Фото зала SUPERGYM.">
-        </picture>
-        <iframe>video</iframe>
+        <iframe class="about__video" src="https://www.youtube.com/watch?v=9TZXsZItgdw" width="320" height="170" loading="lazy"></iframe>
       </section>
 
       <section class="price" data-test="price">
-        <h2 class="price__title">Абонементы</h2>
-        <ul class="price__list">
-          <li class="price__item price__item--current">1 месяц</li>
-          <li class="price__item">6 месяцев</li>
-          <li class="price__item">12 месяцев</li>
-        </ul>
-        <ul class="card">
-          <li class="card__item">
-            <h3 class="card__title">С тренером</h3>
-            <p class="card__desc">12 занятий</p>
-            <p class="card__price">5000 P</p>
-            <a class="card__button button" href="#">Купить абонемент</a>
-          </li>
-          <li class="card__item">
-            <h3 class="card__title">Дневной</h3>
-            <p class="card__desc">с 8:00 до 17:00</p>
-            <p class="card__price">1700 P</p>
-            <a class="card__button button" href="#">Купить абонемент</a>
-          </li>
-          <li class="card__item">
-            <h3 class="card__title">Полный день</h3>
-            <p class="card__desc">с 8:00 до 22:00</p>
-            <p class="card__price">2700 P</p>
-            <a class="card__button button" href="#">Купить абонемент</a>
-          </li>
-        </ul>
+        <div class="price__container container">
+          <h2 class="price__title">Абонементы</h2>
+          <ul class="price__list">
+            <li class="price__item price__item--current">1 месяц</li>
+            <li class="price__item">6 месяцев</li>
+            <li class="price__item">12 месяцев</li>
+          </ul>
+          <ul class="card">
+            <li class="card__item">
+              <h3 class="card__title">С тренером</h3>
+              <p class="card__desc">12 занятий</p>
+              <p class="card__price">5000 P</p>
+              <a class="card__button button" href="#">Купить абонемент</a>
+            </li>
+            <li class="card__item">
+              <h3 class="card__title">Дневной</h3>
+              <p class="card__desc">с 8:00 до 17:00</p>
+              <p class="card__price">1700 P</p>
+              <a class="card__button button" href="#">Купить абонемент</a>
+            </li>
+            <li class="card__item">
+              <h3 class="card__title">Полный день</h3>
+              <p class="card__desc">с 8:00 до 22:00</p>
+              <p class="card__price">2700 P</p>
+              <a class="card__button button" href="#">Купить абонемент</a>
+            </li>
+          </ul>
+        </div>
       </section>
 
-      <section class="games" data-test="games">
-        <h2 class="games__title visually-hidden">SUPER GAMES</h2>
-        <div class="games__wrapper">
-          <h3 class="games__title">SUPER GAMES</h3>
-          <dl class="games__info">
-            <dt class="games__text">
-              Дата
-            </dt>
-            <dd class="games__description">
-              7
-            </dd>
-            <span class="games__desc">Марта 2019</span>
-            <dt class="games__text">
-              Время
-            </dt>
-            <dd class="games__description">
-              12:00
-            </dd>
-          </dl>
-        </div>
-        <p class="games__subtitle">Ежегодные соревнования по CrossFit</p>
-        <a class="games__button button" href="#">заполнить заявку</a>
+      <section class="games container" data-test="games">
+        <div class="games__container">
+          <h2 class="games__title visually-hidden">SUPER GAMES</h2>
+          <div class="games__wrapper">
+            <h3 class="games__title">SUPER GAMES</h3>
+            <dl class="games__info">
+              <dt class="games__text">
+                Дата
+              </dt>
+              <div class=" games__mini-info">
+                <dd class="games__description games__description--number">
+                  7
+                </dd>
+                <span class="games__desc">Марта 2019</span>
+              </div>
+              <dt class="games__text">
+                Время
+              </dt>
+              <dd class="games__description">
+                12:00
+              </dd>
+            </dl>
+          </div>
+          <p class="games__subtitle">Ежегодные соревнования по CrossFit</p>
+          <a class="games__button button" href="#">заполнить заявку</a>
+      </div>
         <picture>
           <source width="660" height="500" type="image/jpeg" media="(min-width: 1366px)" srcset="img/games/games_desktop@1x.jpg 1x, img/games/games_desktop@2x.jpg 2x">
           <source width="378" height="348" type="image/jpeg" media="(min-width: 768px)" srcset="img/games/games_tablet@1x.jpg 1x, img/games/games_tablet@2x.jpg 2x">
@@ -125,258 +138,296 @@
         </picture>
       </section>
 
-      <section class="juri" data-test="juri">
+      <section class="juri container" data-test="juri">
         <h2 class="juri__title">Жюри</h2>
-        <img class="juri__image" src="img/juri/anna_pavlova@1x.jpg" srcset="img/juri/anna_pavlova@2x.jpg 2x" width="260" height="300"  alt="Анна Павлова.">
-        <img class="juri__image" src="img/juri/alex_lavrov@1x.jpg" srcset="img/juri/alex_lavrov@2x.jpg 2x" width="260" height="300"  alt="Алексей Лавров.">
-        <img class="juri__image" src="img/juri/alex_pashkov@1x.jpg" srcset="img/juri/alex_pashkov@2x.jpg 2x" width="260" height="300"  alt="Александр Пашков.">
-        <img class="juri__image" src="img/juri/mary_ketova@1x.jpg" srcset="img/juri/mary_ketova@2x.jpg 2x" width="260" height="300"  alt="Мария Кетова.">
+        <div class=" juri__img"></div>
+          <img class="juri__image juri__image--one" src="img/juri/anna_pavlova@1x.jpg" srcset="img/juri/anna_pavlova@2x.jpg 2x" width="260" height="300"  alt="Анна Павлова.">
+          <img class="juri__image juri__image--two" src="img/juri/alex_lavrov@1x.jpg" srcset="img/juri/alex_lavrov@2x.jpg 2x" width="260" height="300"  alt="Алексей Лавров.">
+          <img class="juri__image juri__image--three" src="img/juri/alex_pashkov@1x.jpg" srcset="img/juri/alex_pashkov@2x.jpg 2x" width="260" height="300"  alt="Александр Пашков.">
+          <img class="juri__image juri__image--four" src="img/juri/mary_ketova@1x.jpg" srcset="img/juri/mary_ketova@2x.jpg 2x" width="260" height="300"  alt="Мария Кетова.">
+        </div>
       </section>
 
       <section class="features" data-test="features">
-        <h2 class="features__title">Наши преимущества</h2>
-        <ul class="features__list">
-          <li class="features__item">
-            <dl class="features__info">
-              <dt class="features__number">
-                900
-              </dt>
-              <dd class="features__desc">
-                кв/м
-              </dd>
-              <dt class="features__lead">
-                Площадь
-              </dt>
-              <dd class="features__text">
-                Занимайтесь без очередей и толкучки
-              </dd>
-            </dl>
-          </li>
-          <li class="features__item">
-            <dl class="features__info">
-              <dt class="features__number">
-                70
-              </dt>
-              <dd class="features__desc">
-                машин
-              </dd>
-              <dt class="features__lead">
-                Собственная парковка
-              </dt>
-              <dd class="features__text">
-                Вы всегда найдёте место для своей машины на нашей парковке
-              </dd>
-            </dl>
-          </li>
-          <li class="features__item">
-            <dl class="features__info features__info--current">
-              <dt class="features__number features__number--current">
-                100
-              </dt>
-              <dt class="features__lead features__lead--current">
-                Тренажёров
-              </dt>
-              <dd class="features__text features__text--current">
-                Современные тренажёры на все группы мышц
-              </dd>
-            </dl>
-          </li>
-          <li class="features__item">
-            <dl class="features__info">
-              <dt class="features__number">
-                350
-              </dt>
-              <dd class="features__desc">
-                мест
-              </dd>
-              <dt class="features__lead">
-                Комфорт
-              </dt>
-              <dd class="features__text">
-                Просторные раздевалки, душевые, фен, Wi-Fi, кулеры
-              </dd>
-            </dl>
-          </li>
-          <li class="features__item">
-            <dl class="features__info">
-              <dt class="features__number">
-                5+
-              </dt>
-              <dd class="features__desc">
-                лет
-              </dd>
-              <dt class="features__lead">
-                Тренерский опыт
-              </dt>
-              <dd class="features__text">
-                Добивайтесь своих целей быстрее с профессиональным тренером
-              </dd>
-            </dl>
-          </li>
-        </ul>
+        <div class="features__wrapper container">
+          <h2 class="features__title">Наши преимущества</h2>
+          <ul class="features__list">
+            <li class="features__item">
+              <dl class="features__info">
+                <div class="features__num">
+                  <dt class="features__number">
+                    900
+                  </dt>
+                  <dd class="features__desc">
+                    кв/м
+                  </dd>
+                </div>
+                <div class="features__content">
+                  <dt class="features__lead">
+                    Площадь
+                  </dt>
+                  <dd class="features__text">
+                    Занимайтесь без очередей и толкучки
+                  </dd>
+              </div>
+              </dl>
+            </li>
+            <li class="features__item">
+              <dl class="features__info">
+                <div class="features__num">
+                  <dt class="features__number">
+                    70
+                  </dt>
+                  <dd class="features__desc">
+                    машин
+                  </dd>
+                </div>
+                <div class="features__content">
+                  <dt class="features__lead">
+                    Собственная парковка
+                  </dt>
+                  <dd class="features__text">
+                    Вы всегда найдёте место для своей машины на нашей парковке
+                  </dd>
+                </div>
+              </dl>
+            </li>
+            <li class="features__item features__item--current">
+              <dl class="features__info features__info--current">
+                <dt class="features__number features__number--current">
+                  100
+                </dt>
+                <dt class="features__lead features__lead--current">
+                  Тренажёров
+                </dt>
+                <dd class="features__text features__text--current">
+                  Современные тренажёры на все группы мышц
+                </dd>
+              </dl>
+            </li>
+            <li class="features__item">
+              <dl class="features__info">
+                <div class="features__num">
+                  <dt class="features__number">
+                    350
+                  </dt>
+                  <dd class="features__desc">
+                    мест
+                  </dd>
+                </div>
+                <div class="features__content">
+                  <dt class="features__lead">
+                    Комфорт
+                  </dt>
+                  <dd class="features__text">
+                    Просторные раздевалки, душевые, фен, Wi-Fi, кулеры
+                  </dd>
+                </div>
+              </dl>
+            </li>
+            <li class="features__item">
+              <dl class="features__info">
+                <div class="features__num">
+                  <dt class="features__number">
+                    5+
+                  </dt>
+                  <dd class="features__desc">
+                    лет
+                  </dd>
+                </div>
+                <div class="features__content">
+                  <dt class="features__lead">
+                    Тренерский опыт
+                  </dt>
+                  <dd class="features__text">
+                    Добивайтесь своих целей быстрее с профессиональным тренером
+                  </dd>
+              </div>
+              </dl>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="offers" data-test="offers">
-        <h2 class="offers__title">Акции</h2>
-        <div class="offers__wrapper">
-          <div class="offers__sale">
-            <p class="offers__desc">Год</p>
-            <p class="offers_price">4999</p>
-            <p class="offers__text">Безлимитный абонемент в тренажёрный зал</p>
-            <a class="offers__button button" href="#">подробнее</a>
+        <div class="offers__container container">
+          <h2 class="offers__title">Акции</h2>
+          <div class="offers__content">
+            <div class="offers__wrapper">
+              <div class="offers__sale">
+                <p class="offers__desc">Год</p>
+                <p class="offers__price">4999</p>
+                <p class="offers__text">Безлимитный абонемент в тренажёрный зал</p>
+                <a class="offers__button button" href="#">подробнее</a>
+              </div>
+              <picture>
+                <source width="280" height="460" type="image/jpeg" media="(min-width: 1366px)" srcset="img/offers/girl_desktop@1x.jpg 1x, img/offers/girl_desktop@2x.jpg 2x">
+                <source width="400" height="462" type="image/jpeg" media="(min-width: 768px)" srcset="img/offers/girl_tablet@1x.jpg 1x, img/offers/girl_tablet@2x.jpg 2x">
+                <img class="offers__image" src="img/offers/girl_mobile@1x.jpg" srcset="img/offers/girl_mobile@2x.jpg 2x" width="320" height="360"  alt="Фото девушки SUPERGYM.">
+              </picture>
+            </div>
+            <ul class="offers__list">
+              <li class="offers__item benefits">
+                <h3 class="benefits__title">Месяц бесплатно</h3>
+                <p class="benefits__text">Приведи друга, получи абонемент в подарок</p>
+                <a class="benefits__button button" href="#">подробнее</a>
+              </li>
+              <li class="offers__item benefits">
+                <h3 class="benefits__title">Скидка 20%</h3>
+                <p class="benefits__text">Корпоративный фитнес с командой</p>
+                <a class="benefits__button button" href="#">подробнее</a>
+              </li>
+            </ul>
           </div>
-          <picture>
-            <source width="280" height="460" type="image/jpeg" media="(min-width: 1366px)" srcset="img/offers/girl_desktop@1x.jpg 1x, img/offers/girl_desktop@2x.jpg 2x">
-            <source width="400" height="462" type="image/jpeg" media="(min-width: 768px)" srcset="img/offers/girl_tablet@1x.jpg 1x, img/offers/girl_tablet@2x.jpg 2x">
-            <img class="offers__image" src="img/offers/girl_mobile@1x.jpg" srcset="img/offers/girl_mobile@2x.jpg 2x" width="320" height="360"  alt="Фото девушки SUPERGYM.">
-          </picture>
         </div>
-        <ul class="offers__list">
-          <li class="offers__item benefits">
-            <h3 class="benefits__title">Месяц бесплатно</h3>
-            <p class="benefits__text">Приведи друга, получи абонемент в подарок</p>
-            <a class="benefits__button button" href="#">подробнее</a>
-          </li>
-          <li class="offers__item benefits">
-            <h3 class="benefits__title">Скидка 20%</h3>
-            <p class="benefits__text">Корпоративный фитнес с командой</p>
-            <a class="benefits__button button" href="#">подробнее</a>
-          </li>
-        </ul>
       </section>
 
       <section class="faq" data-test="faq">
-        <h2 class="faq__title">Вопросы и ответы</h2>
-        <ul class="faq__list">
-          <li class="faq__item">
-            <p class="faq__tab faq__tab--current">Центр</p>
-          </li>
-          <li class="faq__item">
-            <p class="faq__tab">Абонемент</p>
-          </li>
-          <li class="faq__item">
-            <p class="faq__tab">Услуги</p>
-          </li>
-          <li class="faq__item">
-            <p class="faq__tab">Правила</p>
-          </li>
-        </ul>
-        <ul class="faq__list-question">
-          <li class="faq__item-question">
-            <h3 class="faq__title-question">Как стать членом фитнес-центра?</h3>
-            <p class="faq__text">При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
-          </li>
-          <li class="faq__item-question">
-            <h3 class="faq__title-question">Где можно посмотреть расписание?</h3>
-          </li>
-          <li class="faq__item-question">
-            <h3 class="faq__title-question">Есть кулеры в центре? Предоставляются полотенца?</h3>
-          </li>
-          <li class="faq__item-question">
-            <h3 class="faq__title-question">Сколько тренеров работает в клубе и какова их квалификация?</h3>
-          </li>
-        </ul>
+        <div class="faq__wrapper container">
+          <h2 class="faq__title">Вопросы и ответы</h2>
+            <div class="faq__container">
+              <ul class="faq__list">
+                <li class="faq__item">
+                  <p class="faq__tab faq__tab--current">Центр</p>
+                </li>
+                <li class="faq__item">
+                  <p class="faq__tab">Абонемент</p>
+                </li>
+                <li class="faq__item">
+                  <p class="faq__tab">Услуги</p>
+                </li>
+                <li class="faq__item">
+                  <p class="faq__tab">Правила</p>
+                </li>
+              </ul>
+              <ul class="faq__list-question">
+                <li class="faq__item-question">
+                  <h3 class="faq__title-question">Как стать членом фитнес-центра?</h3>
+                  <p class="faq__text">При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
+                </li>
+                <li class="faq__item-question">
+                  <h3 class="faq__title-question">Где можно посмотреть расписание?</h3>
+                </li>
+                <li class="faq__item-question">
+                  <h3 class="faq__title-question">Есть кулеры в центре? Предоставляются полотенца?</h3>
+                </li>
+                <li class="faq__item-question">
+                  <h3 class="faq__title-question">Сколько тренеров работает в клубе и какова их квалификация?</h3>
+                </li>
+              </ul>
+            </div>
+        </div>
       </section>
 
-      <section class="reviews" data-test="reviews">
-        <h2 class="reviews__title">Отзывы</h2>
-        <div class="reviews__wrapper">
-          <picture>
-            <source width="80" height="80" type="image/jpeg" media="(min-width: 768px)" srcset="img/reviews/anna_orlova_tablet@1x.jpg 1x, img/reviews/anna_orlova_tablet@2x.jpg 2x">
-            <img class="reviews__image" src="img/reviews/anna_orlova_mobile@1x.jpg" srcset="img/reviews/anna_orlova_mobile@2x.jpg 2x" width="68" height="68"  alt="Фото Анна Орлова.">
-          </picture>
-          <h2 class="reviews__subtitle">Анна Орлова</h2>
-          <p class="reviews__desc">«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+      <section class="reviews container" data-test="reviews">
+        <div class="reviews__container">
+          <h2 class="reviews__title">Отзывы</h2>
+          <div class="reviews__wrapper">
+            <picture>
+              <source width="80" height="80" type="image/jpeg" media="(min-width: 768px)" srcset="img/reviews/anna_orlova_tablet@1x.jpg 1x, img/reviews/anna_orlova_tablet@2x.jpg 2x">
+              <img class="reviews__image" src="img/reviews/anna_orlova_mobile@1x.jpg" srcset="img/reviews/anna_orlova_mobile@2x.jpg 2x" width="68" height="68"  alt="Фото Анна Орлова.">
+            </picture>
+            <div class="reviews__content">
+              <h2 class="reviews__subtitle">Анна Орлова</h2>
+              <p class="reviews__desc">«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+            </div>
+          </div>
         </div>
       </section>
 
       <section class="form" data-test="form">
-        <h2 class="form__title">Бесплатное занятие</h2>
-        <form class="form__application" action="https://echo.htmlacademy.ru/" method="post">
-          <div class="form__container">
-          <p class="form__name field-group">
-            <label class="form__label" for="form-name">Имя</label>
-            <input class="form__field" type="text" id="form-name" name="form-name" placeholder="Имя" required>
-          </p>
-          <p class="form_phone field-group">
-            <label class="form__label" for="form-phone">Телефон</label>
-            <input class="form__field" type="number" id="form-phone" name="form-phone" placeholder="Телефон" required>
-          </p>
-          </div>
-          <button class="form__button button" type="submit">Отправить</button>
-        </form>
+        <div class="form__wrapper container">
+          <h2 class="form__title">Бесплатное занятие</h2>
+          <form class="form__application" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="form__container">
+              <p class="form__name field-group">
+                <label class="form__label" for="form-name">Имя</label>
+                <input class="form__field" type="text" id="form-name" name="form-name" placeholder="Имя" required>
+              </p>
+              <p class="form__phone field-group">
+                <label class="form__label" for="form-phone">Телефон</label>
+                <input class="form__field" type="number" id="form-phone" name="form-phone" placeholder="Телефон" required>
+              </p>
+            </div>
+            <button class="form__button button" type="submit">Отправить</button>
+          </form>
+        </div>
       </section>
 
       <section class="contacts">
-        <h2 class="contacts__title">Контакты</h2>
-        <ul class="contacts__list">
-          <li class="contacts__item">
-            <h3 class="contacts__subtitle">Адрес:</h3>
-            <address class="contacts__address">г. Омск, ул. 60 лет Октября, 7</address>
-          </li>
-          <li class="contacts__item">
-            <h3 class="contacts__subtitle">График работы:</h3>
-            <p class="contacts__desc">Пн-Вс: с 8:00 до 22:00</p>
-          </li>
-          <li class="contacts__item">
-            <h3 class="contacts__subtitle">Телефон:</h3>
-            <a class="contacts__tel" href="tel:+88005555555">8 800 555-55-55</a>
-          </li>
-          <li class="contacts__item">
-            <h3 class="contacts__subtitle">Email:</h3>
-            <a class="contacts__email" href="mailto:oмск@supergym.ru">oмск@supergym.ru</a>
-          </li>
-        </ul>
+        <div class="contacts__wrapper container">
+          <h2 class="contacts__title">Контакты</h2>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <h3 class="contacts__subtitle">Адрес:</h3>
+              <address class="contacts__address">г. Омск, ул. 60 лет Октября, 7</address>
+            </li>
+            <li class="contacts__item">
+              <h3 class="contacts__subtitle">График работы:</h3>
+              <p class="contacts__desc">Пн-Вс: с 8:00 до 22:00</p>
+            </li>
+            <li class="contacts__item">
+              <h3 class="contacts__subtitle">Телефон:</h3>
+              <a class="contacts__tel" href="tel:+88005555555">8 800 555-55-55</a>
+            </li>
+            <li class="contacts__item">
+              <h3 class="contacts__subtitle">Email:</h3>
+              <a class="contacts__email" href="mailto:oмск@supergym.ru">oмск@supergym.ru</a>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
 
     <footer class="footer" data-test="footer">
-      <picture>
-        <source width="130" height="26" type="image/svg+xml" media="(min-width: 1366px)" srcset="img/logo_desktop.svg">
-        <source width="110" height="22" type="image/svg+xml" media="(min-width: 768px)" srcset="img/logo_tablet.svg">
-        <img class="logo-nav__image" src="img/logo_mobile.svg" width="100" height="20" alt="Логотип SUPERGYM.">
-      </picture>
-      <nav class="footer-nav">
-        <div class="footer-nav__wrapper container">
-          <ul class="footer-nav__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link" href="#">Услуги</a>
+      <div class="footer__wrapper container">
+        <picture>
+          <source width="130" height="26" type="image/svg+xml" media="(min-width: 1366px)" srcset="img/logo_desktop.svg">
+          <source width="110" height="22" type="image/svg+xml" media="(min-width: 768px)" srcset="img/logo_tablet.svg">
+          <img class="footer__logo logo-nav__image" src="img/logo_mobile.svg" width="100" height="20" alt="Логотип SUPERGYM.">
+        </picture>
+        <nav class="footer-nav">
+          <div class="footer-nav__wrapper container">
+            <ul class="footer-nav__list site-list">
+              <li class="site-list__item">
+                <a class="site-list__link" href="#">Услуги</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="#">Абонементы</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="#">Акции</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="#">Тренеры</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="#">Расписание</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="footer__social social">
+          <h2 class="visually-hidden">Социальные сети.</h2>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://www.vk.ru">
+                <span class="visually-hidden">vk</span>
+              </a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="#">Абонементы</a>
+            <li class="social__item">
+              <a class="social__link social__link--ok" href="https://www.ok.ru">
+                <span class="visually-hidden">odnoklassniki</span>
+              </a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="#">Акции</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="#">Тренеры</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="#">Расписание</a>
+            <li class="social__item">
+              <a class="social__link social__link--reddit" href="https://www.reddit.com">
+                <span class="visually-hidden">reddit</span>
+              </a>
             </li>
           </ul>
         </div>
-    </nav>
-    <div class="footer__social social">
-      <h2 class="visually-hidden">Социальные сети.</h2>
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="https://www.vk.ru">
-            <span class="visually-hidden">vk</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--ok" href="https://www.ok.ru">
-            <span class="visually-hidden">odnoklassniki</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--reddit" href="https://www.reddit.com">
-            <span class="visually-hidden">reddit</span>
-          </a>
-        </li>
-      </ul>
-    </div>
+      </div>
     </footer>
 
     <script type="module" src="js/main.js"></script>

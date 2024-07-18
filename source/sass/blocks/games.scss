@@ -1,8 +1,44 @@
 .games {
+  padding: 25px 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    padding: 60px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 0;
+  }
+}
+
+.games__container {
+  padding: 40px;
   background-color: $banner_background-color;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    height: 348px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 60px 80px 98px;
+    width: 500px;
+    height: 500px;
+  }
+}
+
+.games__wrapper {
+  display: flex;
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+  }
 }
 
 .games__title {
+  margin-top: 0;
+  margin-bottom: 16px;
+
   font-family: $secondary-font;
   font-weight: 600;
   font-size: 48px;
@@ -10,33 +46,71 @@
   text-transform: uppercase;
   color: $secondary-color-text;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 36px;
+  }
+
   @media (min-width: $desktop-width) {
+    width: 168px;
+    margin-bottom: 30px;
     font-size: 82px;
     line-height: 96px;
   }
 }
+.games__info {
+  margin: 0;
+  width: 56px;
+
+  @media (min-width: $desktop-width) {
+    width: 95px;
+  }
+}
 
 .games__text {
+  margin-bottom: 5px;
   font-weight: 300;
   font-size: 16px;
   line-height: 20px;
   color: $secondary-color-text;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 4px;
     font-size: 18px;
     line-height: 24px;
   }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 12px;
+    }
 }
 
 .games__description {
+  margin-left: 0;
   font-weight: 700;
   font-size: 24px;
   line-height: 24px;
   color: $secondary-color-text;
 
+  &--number {
+    margin-right: 3px;
+  }
+
   @media (min-width: $desktop-width) {
     font-size: 40px;
     line-height: 40px;
+  }
+}
+
+.games__mini-info {
+  display: flex;
+  margin-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 20px;
   }
 }
 
@@ -53,21 +127,41 @@
 }
 
 .games__subtitle {
+  margin-top: 0;
+  margin-bottom: 16px;
   font-weight: 300;
   font-size: 16px;
   line-height: 20px;
   color: $secondary-color-text;
 
   @media (min-width: $tablet-width) {
+    width: 199px;
+    margin-bottom: 10px;
     font-size: 18px;
     line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 340px;
+    margin-bottom: 30px;
+
   }
 }
 
 .games__button {
+  width: 210px;
   font-weight: 700;
   font-size: 12px;
   line-height: 12px;
   text-transform: uppercase;
   color: $secondary-color-text;
+
+  @media (min-width: $tablet-width) {
+    width: 220px;
+    height: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 340px;
+  }
 }

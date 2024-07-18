@@ -2,7 +2,21 @@
   background-color: #102654;
 }
 
+.form__wrapper {
+  padding: 70px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 164px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 60px 103px;
+  }
+}
+
 .form__title {
+  margin-top: 0;
+  margin-bottom: 36px;
   font-family: $secondary-font;
   font-weight: 600;
   font-size: 32px;
@@ -15,11 +29,27 @@
   }
 }
 
+.form__container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
 .form__button {
   font-weight: 700;
   font-size: 12px;
   line-height: 12px;
   text-transform: uppercase;
   color: $secondary-color-text;
+  background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    width: 440px;
+    height: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 477px;
+  }
 }
 

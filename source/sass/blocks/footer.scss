@@ -1,3 +1,28 @@
 .footer {
   background-color:  #030a1a;
 }
+
+.footer__wrapper {
+  padding: 40px 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 110px 463px 105px;
+    padding: 45 0px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 130px 831px 95px;
+    padding: 40px 103px;
+
+  }
+}
+
+.footer__logo {
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}

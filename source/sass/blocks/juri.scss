@@ -1,4 +1,21 @@
+.juri {
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+}
+
 .juri__title {
+  margin-top: 0;
+  margin-bottom: 20px;
   font-family: $secondary-font;
   font-weight: 600;
   font-size: 32px;
@@ -6,7 +23,40 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 46px;
     font-size: 54px;
     line-height: 54px;
+  }
+}
+
+.juri__img {
+  display: flex;
+}
+
+.juri__image {
+  margin: 0 auto;
+
+  &--two  {
+    display: none;
+
+    @media (min-width: $tablet-width){
+      display: block;
+    }
+  }
+
+  &--three  {
+    display: none;
+
+    @media (min-width: $desktop-width){
+      display: block;
+    }
+  }
+
+  &--four  {
+    display: none;
+
+    @media (min-width: $desktop-width){
+      display: block;
+    }
   }
 }

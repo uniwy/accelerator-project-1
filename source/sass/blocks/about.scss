@@ -1,41 +1,105 @@
+.about {
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 120px;
+    margin-bottom: 125px;
+  }
+}
+
+.about__container {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: center;
+    gap: 145px;
+    margin: 0 auto;
+  }
+}
+
+.about__wrapper {
+  @media (min-width: $desktop-width) {
+    width: 355px;
+  }
+}
+
 .about__title {
+  margin-bottom: 12px;
+  margin-top: 0;
   font-family: $secondary-font;
   font-weight: 600;
   font-size: 32px;
   line-height: 32px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
     font-size: 42px;
     line-height: 42px;
+    text-align: center;
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 25px;
     font-size: 54px;
     line-height: 54px;
+    text-align: left;
   }
 }
 
 .about__subtitle {
+  margin-top: 0;
+  margin-bottom: 36px;
   font-weight: 400;
   font-size: 18px;
   line-height: 20px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 36px;
     font-size: 20px;
     line-height: 20px;
+    text-align: center;
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 95px;
     font-size: 22px;
     line-height: 22px;
+    text-align: left;
   }
 }
 
 .about__description {
+  margin-bottom: 36px;
+  margin-top: 0;
   font-weight: 300;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
+    text-align: center;
   }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+}
+
+.about__image {
+  margin: 0 auto;
+  margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    width: 660px;
+    height: 400px;
+  }
+}
+
+.about__video {
+  margin: 0 auto;
+  border: none;
 }
