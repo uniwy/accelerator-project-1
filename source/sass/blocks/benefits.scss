@@ -1,6 +1,7 @@
 .benefits {
   padding: 20px;
-  border: 2px solid #000000;
+  border: 7px solid;
+  border-image: linear-gradient(136deg, #d10a42 0%, #00359f 100%) 10;
 
   @media (min-width: $tablet-width) {
     width: 324px;
@@ -12,47 +13,75 @@
   }
 }
 
-.benefits__title {
-  margin-top: 0;
-  margin-bottom: 20px;
-  font-weight: 700;
-  font-size: 22px;
-  text-align: center;
-  color: #1c3374;
+.benefits {
+  h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 22px;
+    text-align: center;
+    color: #1c3374;
 
-  @media (min-width: $tablet-width) {
-    margin-bottom: 10px;
-    font-size: 26px;
-    line-height: 26px;
-    text-align: left;
+    @media (min-width: $tablet-width) {
+      margin-bottom: 10px;
+      font-size: 26px;
+      line-height: 26px;
+      text-align: left;
+    }
   }
 }
 
-.benefits__text {
-  margin-top: 0;
-  margin-bottom: 20px;
-  font-weight: 300;
-  text-align: center;
-  color: #1c3374;
+  .benefits p {
+      margin-top: 0;
+      margin-bottom: 20px;
+      font-weight: 300;
+      text-align: center;
+      color: #1c3374;
 
-  @media (min-width: $tablet-width) {
-    margin-bottom: 30px;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: left;
-  }
-}
+      @media (min-width: $tablet-width) {
+        margin-bottom: 30px;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: left;
+      }
+    }
 
 .benefits__button {
+  position: relative;
   width: 73px;
   height: 20px;
   padding: 0;
   margin: auto;
+  font-size: 14px;
   font-weight: 700;
   line-height: 14px;
   text-transform: uppercase;
   color: #1c3374;
   text-decoration: none;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    padding: 10px;
+    width: 93px;
+    height: 34px;
+    border: 1px solid #1c3374;
+  }
+
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 16px;
+    border: 1px solid #74819c;
+    width: 73px;
+
+    &:focus {
+      display: none;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     margin-left: 0;

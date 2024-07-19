@@ -56,11 +56,12 @@
   }
 }
 
-.reviews__image {
+.reviews {
+img {
   margin-bottom: 10px;
 }
 
-.reviews__subtitle {
+  h3 {
   margin: 0 0 16px;
   font-weight: 400;
   font-size: 18px;
@@ -76,7 +77,7 @@
   }
 }
 
-.reviews__desc {
+p {
   margin: 0;
   font-weight: 300;
   color: $secondary-color-text;
@@ -87,4 +88,5 @@
     line-height: 24px;
     text-align: left;;
   }
+}
 }

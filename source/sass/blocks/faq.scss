@@ -63,12 +63,6 @@
   }
 }
 
-.faq__list-question {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
 .faq__item {
   width: 140px;
   height: 46;
@@ -108,7 +102,12 @@
   }
 }
 
-.faq__title-question {
+.faq__list-question {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+h3 {
   font-weight: 400;
   font-size: 20px;
   line-height: 20px;
@@ -124,7 +123,7 @@
   }
 }
 
-.faq__text {
+p {
   font-weight: 300;
   font-size: 16px;
   line-height: 20px;
@@ -134,3 +133,5 @@
     line-height: 24px;
   }
 }
+}
+

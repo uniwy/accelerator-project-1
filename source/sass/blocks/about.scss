@@ -51,6 +51,24 @@
   }
 }
 
+.about {
+  p {
+    margin-bottom: 36px;
+    margin-top: 0;
+    font-weight: 300;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+  }
+}
+
 .about__subtitle {
   margin-top: 0;
   margin-bottom: 36px;
@@ -69,22 +87,6 @@
     margin-bottom: 95px;
     font-size: 22px;
     line-height: 22px;
-    text-align: left;
-  }
-}
-
-.about__description {
-  margin-bottom: 36px;
-  margin-top: 0;
-  font-weight: 300;
-
-  @media (min-width: $tablet-width) {
-    font-size: 16px;
-    line-height: 24px;
-    text-align: center;
-  }
-
-  @media (min-width: $desktop-width) {
     text-align: left;
   }
 }
