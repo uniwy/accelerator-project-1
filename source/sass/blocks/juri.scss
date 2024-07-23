@@ -31,10 +31,56 @@
 
 .juri__img {
   display: flex;
+  flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    position: relative;
+
+    @media (min-width: $tablet-width) {
+      &::before {
+        position: absolute;
+        content: "";
+        width: 16px;
+        height: 32px;
+        background-image: url("/__spritemap#sprite-arrow_left-view");
+        background-repeat: no-repeat;
+        background-position: center;
+        bottom:134px;
+        left: 5px;
+
+        @media (min-width: $desktop-width) {
+          bottom: 138px;
+          left: -53px;
+        }
+      }
+
+      &::after {
+        position: absolute;
+        content: "";
+        width: 16px;
+        height: 32px;
+        background-image: url("/__spritemap#sprite-arrow_right-view");
+        background-repeat: no-repeat;
+        background-position: center;
+        bottom: 134px;
+        right: 5px;
+
+        @media (min-width: $desktop-width) {
+          bottom: 138px;
+          right: -53px;
+        }
+      }
+    }
+
+
 }
 
 .juri__image {
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  };
 
   &--two  {
     display: none;

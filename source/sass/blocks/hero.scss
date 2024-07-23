@@ -1,5 +1,5 @@
 .hero {
-  padding: 16px 15px 32px;
+  padding: 15px 15px 32px;
   background: linear-gradient(to right, #1c3477 0%, #1c3477 0.01%, #1a3578 39.11%, #73184b 75.5%, #b4022a 100%);
 
   @media (min-width: $tablet-width) {
@@ -18,8 +18,10 @@
   }
 
   @media (min-width: $desktop-width) {
+   margin-left: 38px;
     justify-content: center;
     gap: 56px;
+
   }
 }
 
@@ -30,7 +32,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 52px;
+    margin-top: 50px;
+    margin-left: 75px;
     min-width: 385px;
   }
 }
@@ -72,18 +75,25 @@
   color: $secondary-color-text;
 
   @media (min-width: $tablet-width) {
+    padding-top: 5px;
     margin: 0;
     align-items: center;
     line-height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    margin-bottom: 26px;
+    margin-left: 2px;
   }
 }
 
 .hero__title {
   width: 156px;
-  margin: 0 0 48px;
+  margin: 0 0 47px;
   font-family: $secondary-font;
   font-weight: 800;
-  font-size: 62px;
+  font-size: 61px;
   line-height: 62px;
   letter-spacing: 0.02em;
   text-transform: uppercase;
@@ -110,11 +120,15 @@
 .hero__button {
   @media (min-width: $tablet-width) {
     width: 185px;
+    height: 56px;
+    padding: 20px;
     margin-left: auto;
   }
 
   @media (min-width: $desktop-width) {
     width: 270px;
+    height: 66px;
+    padding: 26px;
   }
 }
 
@@ -123,6 +137,10 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -2px;
   }
 }
 

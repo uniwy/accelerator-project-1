@@ -1,8 +1,8 @@
 .site-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 35px;
-  row-gap: 20px;
+  gap: 36px;
+  row-gap: 16px;
   margin: 0 0 30px;
   padding: 0;
   list-style-type: none;
@@ -10,12 +10,12 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
     margin-left: 35px;
-    gap: 30px;
+    gap: 31px;
     width: 463px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 127px;
+    margin-left: 169px;
     width: 750px;
     gap: 82px;
   }

@@ -30,6 +30,10 @@
 .games__wrapper {
   display: flex;
 
+  @media (min-width: $tablet-width) {
+    gap: 20px;
+  }
+
   @media (min-width: $desktop-width) {
     justify-content: space-between;
   }
@@ -47,6 +51,7 @@
   color: $secondary-color-text;
 
   @media (min-width: $tablet-width) {
+    width: 100px;
     margin-bottom: 36px;
   }
 
@@ -58,20 +63,43 @@
   }
 }
 .games__info {
-  margin: 0;
+  margin: 0 1px 0 0;
   width: 56px;
 
+  @media (min-width: $tablet-width) {
+    width: 100px;
+  }
+
   @media (min-width: $desktop-width) {
-    width: 95px;
+    width: 94px;
   }
 }
 
 .games__text {
+  position: relative;
   margin-bottom: 5px;
   font-weight: 300;
   font-size: 16px;
   line-height: 20px;
   color: $secondary-color-text;
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    display: block;
+    position: absolute;
+    top: 22px;
+    background-color: $base-background-color;
+
+  @media (min-width: $tablet-width) {
+    top: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 29px;
+  }
+  }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 4px;
@@ -91,8 +119,16 @@
   line-height: 24px;
   color: $secondary-color-text;
 
+  @media (min-width: $desktop-width) {
+    padding-top: 1px;
+  }
+
   &--number {
-    margin-right: 3px;
+    margin-right: 4px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 6px;
   }
 
   @media (min-width: $desktop-width) {
@@ -107,6 +143,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 10px;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -121,12 +158,14 @@
   color: $secondary-color-text;
 
   @media (min-width: $tablet-width) {
+    width: 37px;
     font-size: 14px;
     line-height: 22px;
   }
 }
 
 .games__subtitle {
+  width: 171px;
   margin-top: 0;
   margin-bottom: 16px;
   font-weight: 300;
@@ -157,11 +196,13 @@
   color: $secondary-color-text;
 
   @media (min-width: $tablet-width) {
+    padding: 24px;
     width: 220px;
     height: 66px;
   }
 
   @media (min-width: $desktop-width) {
+    padding: 26px;
     width: 340px;
   }
 }

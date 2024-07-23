@@ -21,11 +21,13 @@
 .offers__wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
-    margin-bottom: 35px;
+    margin: 0 auto 35px;
+    width: 678px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 0;
+    margin: 0 0 0 103px;
+    width: 560px;
   }
 }
 
@@ -58,22 +60,37 @@
   }
 }
 
-
-
 .offers__button {
+  position: relative;
   margin: auto;
   padding: 0;
   width: 73px;
   height: 20px;
   font-weight: 700;
+  font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
   color: $secondary-color-text;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    text-align: left;
+  }
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    display: block;
+    position: absolute;
+    top: 18px;
+    background-color: $base-background-color;
+  }
 }
 
 .offers__image {
-  margin-bottom: 40px;
+  margin: 0 auto 40px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
@@ -83,17 +100,21 @@
 .offers__list {
   display: flex;
   flex-direction: column;
-  gap: 40px;
-  margin: 0;
+  gap: 30px;
+  width: 290px;
+  margin: 0 auto;
   padding: 0;
   list-style-type: none;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+    width: 678px;
   }
 
   @media (min-width: $desktop-width) {
+    margin: 0;
     flex-direction: column;
+    width: 560px;
     align-self: flex-end;
   }
 }

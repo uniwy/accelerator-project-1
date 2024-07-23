@@ -8,14 +8,13 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 110px 463px 105px;
-    padding: 45 0px;
+    padding: 45px 0;
     margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 130px 831px 95px;
-    padding: 40px 103px;
-
+    grid-template-columns: 130px 935px 95px;
+    padding: 40px 0;
   }
 }
 
@@ -24,5 +23,6 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
+    padding-top: 0;
   }
 }

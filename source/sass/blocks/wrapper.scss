@@ -1,0 +1,7 @@
+.wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 683px 683px;
+  }
+}

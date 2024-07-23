@@ -49,10 +49,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 80px 330px;
+    grid-template-columns: 80px 323px;
     gap: 30px;
     width: 560px;
     padding: 60px;
+
+    br {
+      display: none;
+    }
   }
 }
 
