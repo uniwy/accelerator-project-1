@@ -1,4 +1,4 @@
-.card__list {
+.card {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -9,7 +9,7 @@
 
   @media (min-width: $tablet-width) {
     gap: 40px;
-  }
+}
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
@@ -20,6 +20,13 @@
 .card__item {
   padding: 50px 42px;
   background-color: $base-background-color;
+
+  &:hover,
+  &:focus {
+    padding: 43px 35px;
+    border: 7px solid;
+    border-image: linear-gradient(136deg, #d10a42 0%, #00359f 100%) 10;
+  }
 
   @media (min-width: $tablet-width) {
     width: 380px;
@@ -88,7 +95,7 @@
     background-repeat: no-repeat;
     background-position: center;
     bottom: 20px;
-    right: 3px
+    right: 3px;
   }
 
   @media (min-width: $tablet-width) {
@@ -127,6 +134,31 @@
   border: 2px solid #102654;
   color: $base-color-text;
   cursor: pointer;
+
+  &:hover {
+    background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+    color: $secondary-color-text;
+    border: transparent;
+  }
+
+  &:focus {
+    background: linear-gradient(151deg, rgba(237, 2, 51, 0.8) 0%, rgba(0, 62, 183, 0.8) 100%);
+    color: $secondary-color-text;
+    border: 2px solid #000000;
+  }
+
+  &:active {
+    background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+    color: rgba(250, 250, 250, 0.7);
+    border: transparent;
+  }
+
+  &:disabled {
+    background-color: transparent;
+    border: 2px solid #102654;
+    color: rgba(16, 38, 84, 0.3);
+  }
+
 
   @media (min-width: $tablet-width) {
     width: 250px;

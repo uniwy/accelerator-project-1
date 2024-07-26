@@ -110,21 +110,21 @@
         position: absolute;
         top: 149px;
         left: 0;
-        background-color: #d10A42;
+        background-color: #d10a42;
         opacity: 0.2;
-    }
+      }
 
-    &::before {
-      content: "";
-      width: 360px;
-      height: 2px;
-      display: block;
-      position: absolute;
-      top: 149px;
-      right: 0;
-      background-color: #d10A42;
-      opacity: 0.2;
-  }
+      &::before {
+        content: "";
+        width: 360px;
+        height: 2px;
+        display: block;
+        position: absolute;
+        top: 149px;
+        right: 0;
+        background-color: #d10a42;
+        opacity: 0.2;
+      }
     }
   }
 }
@@ -144,50 +144,48 @@
     gap: 43px;
     justify-content: space-between;
   }
-
 }
 
 .features__num {
   @media (min-width: $tablet-width) {
-  margin-right: 15px;
+    margin-right: 15px;
   }
 
   @media (min-width: $desktop-width) {
     margin-right: 0;
   }
 
-dt {
-  margin: 0 auto;
-  //width: 107px;
-  display: block;
-  font-weight: 700;
-  font-size: 64px;
-  line-height: 64px;
-  color: transparent;
-  background-clip: text;
-  background-image: linear-gradient(129deg, #d10a42 0%, #0041ca 100%);
-  text-align: center;
+  dt {
+    margin: 0 auto;
+    display: block;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 64px;
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(129deg, #d10a42 0%, #0041ca 100%);
+    text-align: center;
 
-  @media (min-width: $tablet-width) {
-    font-size: 70px;
-    line-height: 70px;
-    text-align: left;
+    @media (min-width: $tablet-width) {
+      font-size: 70px;
+      line-height: 70px;
+      text-align: left;
+    }
   }
-}
 
-dd {
-  margin: 0 0 12px 0;
-  font-weight: 400;
-  line-height: 20px;
-  color: #2e35ac;
-  text-align: center;
+  dd {
+    margin: 0 0 12px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #2e35ac;
+    text-align: center;
 
-  @media (min-width: $tablet-width) {
-    margin: 0;
-    line-height: 22px;
-    text-align: left;
+    @media (min-width: $tablet-width) {
+      margin: 0;
+      line-height: 22px;
+      text-align: left;
+    }
   }
-}
 }
 
 .features__content {
@@ -200,22 +198,22 @@ dd {
   }
 
   dt {
-    margin: 0 0 12px 0;
+    margin: 0 0 12px;
     font-weight: 400;
     font-size: 18px;
     line-height: 20px;
     text-align: center;
 
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    text-align: left;
-  }
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      text-align: left;
+    }
 
-  @media (min-width: $desktop-width) {
-    margin: 0 0 8px 0;
-    font-size: 22px;
-    line-height: 22px;
-  }
+    @media (min-width: $desktop-width) {
+      margin: 0 0 8px;
+      font-size: 22px;
+      line-height: 22px;
+    }
   }
 
   dd {
@@ -224,20 +222,16 @@ dd {
     font-weight: 300;
     text-align: center;
 
-
-
-  @media (min-width: $tablet-width) {
-    font-size: 16px;
-    line-height: 24px;
-    text-align: left;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 210px;
-    br {
-      display: none;
+    @media (min-width: $tablet-width) {
+      width: 238px;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: left;
     }
-  }
+
+    @media (min-width: $desktop-width) {
+      width: 210px;
+    }
   }
 }
 
@@ -264,16 +258,16 @@ dd {
     text-align: center;
     color: $secondary-color-text;
 
-      @media (min-width: $tablet-width) {
-        margin-bottom: 25px;
-        font-size: 70px;
-        line-height: 70px;
-      }
+    @media (min-width: $tablet-width) {
+      margin-bottom: 25px;
+      font-size: 70px;
+      line-height: 70px;
+    }
 
-      @media (min-width: $desktop-width) {
-        margin-bottom: 10px;
+    @media (min-width: $desktop-width) {
+      margin-bottom: 10px;
+    }
   }
-}
 
   p {
     margin-top: 0;
@@ -297,7 +291,7 @@ dd {
     }
   }
 
-  dd{
+  dd {
     margin: auto;
     font-weight: 300;
     width: 163px;
@@ -314,6 +308,10 @@ dd {
     @media (min-width: $desktop-width) {
       margin: 0;
       width: 280px;
+
+      br {
+        display: none;
+      }
     }
   }
-  }
+}

@@ -3,7 +3,7 @@
 }
 
 .form__wrapper {
-  padding: 70px 15px 70px;
+  padding: 70px 15px;
 
   @media (min-width: $tablet-width) {
     padding: 60px 0;
@@ -45,10 +45,11 @@
 
 .form__field {
   width: 290px;
-  padding: 2px 0 7px 0;
+  padding: 2px 0 7px;
+  color: $secondary-color-text;
   background-color: #102654;
   border: none;
-  border-bottom: 1px solid #74819C;
+  border-bottom: 2px solid #74819c;
 
   @media (min-width: $tablet-width) {
     width: 205px;
@@ -56,6 +57,19 @@
 
   @media (min-width: $desktop-width) {
     width: 223px;
+  }
+
+  &:hover {
+    border-bottom: 2px solid $base-background-color;
+  }
+
+  &:focus {
+    border: 2px solid $base-background-color;
+  }
+
+  &:disabled {
+    border: 2px solid $base-background-color;
+    opacity: 0.4;
   }
 }
 
@@ -77,4 +91,3 @@
     width: 477px;
   }
 }
-

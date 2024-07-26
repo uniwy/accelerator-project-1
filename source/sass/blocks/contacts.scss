@@ -8,10 +8,10 @@
 
 .contacts__wrapper {
   position: relative;
-  padding: 0 15px 0;
+  padding: 0 15px;
 
   @media (min-width: $desktop-width) {
-    padding: 0 103px 0;
+    padding: 0 103px;
   }
 }
 
@@ -105,7 +105,7 @@
 .contacts__address,
 .contacts__desc,
 .contacts__tel,
-.contacts__email  {
+.contacts__email {
   margin: 0;
   font-weight: 400;
   font-style: normal;
@@ -117,4 +117,3 @@
     line-height: 22px;
   }
 }
-

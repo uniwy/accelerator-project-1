@@ -1,15 +1,12 @@
 .juri {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  padding: 40px 0;
 
   @media (min-width: $tablet-width) {
-    margin-top: 30px;
-    margin-bottom: 60px;
+    padding: 30px 0 60px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    padding: 100px 0;
   }
 }
 
@@ -32,47 +29,45 @@
 .juri__img {
   display: flex;
   flex-direction: row;
-    justify-content: center;
-    gap: 40px;
-    position: relative;
+  justify-content: center;
+  gap: 40px;
+  position: relative;
 
-    @media (min-width: $tablet-width) {
-      &::before {
-        position: absolute;
-        content: "";
-        width: 16px;
-        height: 32px;
-        background-image: url("/__spritemap#sprite-arrow_left-view");
-        background-repeat: no-repeat;
-        background-position: center;
-        bottom:134px;
-        left: 5px;
+  @media (min-width: $tablet-width) {
+    &::before {
+      position: absolute;
+      content: "";
+      width: 16px;
+      height: 32px;
+      background-image: url("/__spritemap#sprite-arrow_left-view");
+      background-repeat: no-repeat;
+      background-position: center;
+      bottom: 134px;
+      left: 50px;
 
-        @media (min-width: $desktop-width) {
-          bottom: 138px;
-          left: -53px;
-        }
-      }
-
-      &::after {
-        position: absolute;
-        content: "";
-        width: 16px;
-        height: 32px;
-        background-image: url("/__spritemap#sprite-arrow_right-view");
-        background-repeat: no-repeat;
-        background-position: center;
-        bottom: 134px;
-        right: 5px;
-
-        @media (min-width: $desktop-width) {
-          bottom: 138px;
-          right: -53px;
-        }
+      @media (min-width: $desktop-width) {
+        bottom: 138px;
+        left: 49px;
       }
     }
 
+    &::after {
+      position: absolute;
+      content: "";
+      width: 16px;
+      height: 32px;
+      background-image: url("/__spritemap#sprite-arrow_right-view");
+      background-repeat: no-repeat;
+      background-position: center;
+      bottom: 134px;
+      right: 50px;
 
+      @media (min-width: $desktop-width) {
+        bottom: 138px;
+        right: 49px;
+      }
+    }
+  }
 }
 
 .juri__image {
@@ -80,28 +75,28 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
-  };
+  }
 
-  &--two  {
+  &--two {
     display: none;
 
-    @media (min-width: $tablet-width){
+    @media (min-width: $tablet-width) {
       display: block;
     }
   }
 
-  &--three  {
+  &--three {
     display: none;
 
-    @media (min-width: $desktop-width){
+    @media (min-width: $desktop-width) {
       display: block;
     }
   }
 
-  &--four  {
+  &--four {
     display: none;
 
-    @media (min-width: $desktop-width){
+    @media (min-width: $desktop-width) {
       display: block;
     }
   }

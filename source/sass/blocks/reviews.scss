@@ -1,12 +1,12 @@
 .reviews__container {
-  margin: 40px 0;
+  padding: 40px 0;
 
   @media (min-width: $tablet-width) {
-    margin: 60px 0;
+    padding: 60px 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 100px 0;
+    padding: 100px 0;
   }
 }
 
@@ -38,6 +38,7 @@
   padding: 30px 25px;
   width: 240px;
   background-color: #1c3374;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -46,6 +47,40 @@
     align-items: flex-start;
     width: 500px;
     padding: 40px 30px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 16px;
+      height: 32px;
+      background-image: url("/__spritemap#sprite-arrow_left-view");
+      background-repeat: no-repeat;
+      background-position: center;
+      bottom: 104px;
+      left: -89px;
+
+      @media (min-width: $desktop-width) {
+        bottom: 114px;
+        left: -105px;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 16px;
+      height: 32px;
+      background-image: url("/__spritemap#sprite-arrow_right-view");
+      background-repeat: no-repeat;
+      background-position: center;
+      bottom: 104px;
+      right: -89px;
+
+      @media (min-width: $desktop-width) {
+        bottom: 114px;
+        right: -105px;
+      }
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -61,36 +96,36 @@
 }
 
 .reviews {
-img {
-  margin-bottom: 10px;
-}
+  img {
+    margin-bottom: 10px;
+  }
 
   h3 {
-  margin: 0 0 16px;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 20px;
-  color: $secondary-color-text;
-  text-align: center;
+    margin: 0 0 16px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    color: $secondary-color-text;
+    text-align: center;
 
-  @media (min-width: $tablet-width) {
-    margin-bottom: 20px;
-    font-size: 22px;
-    line-height: 22px;
-    text-align: left;
+    @media (min-width: $tablet-width) {
+      margin-bottom: 20px;
+      font-size: 22px;
+      line-height: 22px;
+      text-align: left;
+    }
   }
-}
 
-p {
-  margin: 0;
-  font-weight: 300;
-  color: $secondary-color-text;
-  text-align: center;
+  p {
+    margin: 0;
+    font-weight: 300;
+    color: $secondary-color-text;
+    text-align: center;
 
-  @media (min-width: $tablet-width) {
-    font-size: 16px;
-    line-height: 24px;
-    text-align: left;;
+    @media (min-width: $tablet-width) {
+      font-size: 16px;
+      line-height: 24px;
+      text-align: left;
+    }
   }
-}
 }

@@ -18,12 +18,6 @@
   </head>
 
   <body class="page-body">
-    <!-- пример использования спрайта
-    <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
-    <svg>
-      <use href="/__spritemap#sprite-user"></use>
-    </svg>-->
-
 
     <main>
       <section class="hero" data-test="hero">
@@ -48,11 +42,11 @@
             <a class="hero__button button" href="#abonements">Купить абонемент</a>
           </div>
           <picture>
-              <!-- <source type="image/webp" media="(min-width: 1366px)" srcset="img/hero/hero_desktop@1x.webp 1x, img/hero/hero_desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/hero/hero_tablet@1x.webp 1x, img/hero/hero_tablet@2x.webp 2x"> -->
+              <!--<source type="image/webp" media="(min-width: 1366px)" srcset="img/hero/hero_desktop@1x.webp 1x, img/hero/hero_desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/hero/hero_tablet@1x.webp 1x, img/hero/hero_tablet@2x.webp 2x">-->
               <source width="500" height="524" type="image/jpeg" media="(min-width: 1366px)" srcset="img/hero/hero_desktop@1x.jpg 1x, img/hero/hero_desktop@2x.jpg 2x">
               <source width="324" height="390" type="image/jpeg" media="(min-width: 768px)" srcset="img/hero/hero_tablet@1x.jpg 1x, img/hero/hero_tablet@2x.jpg 2x">
-              <img class="hero__image" src="img/hero/hero_tablet@1x.jpg" srcset="img/hero/hero_tablet@2x.jpg 2x" width="324" height="390" alt="Фото тренера.">
+              <img class="hero__image" src="z" srcset="img/hero/hero_tablet@2x.jpg 2x" width="324" height="390" alt="Фото тренера.">
           </picture>
         </div>
       </section>
@@ -79,14 +73,14 @@
       </section>
 
       <section class="price" data-test="price">
-        <div class="price__container container">
+        <div class="price__container container" id="abonements">
           <h2 class="price__title">Абонементы</h2>
           <ul class="price__list">
             <li class="price__item price__item--current">1 месяц</li>
             <li class="price__item">6 месяцев</li>
             <li class="price__item">12 месяцев</li>
           </ul>
-          <ul class="card__list">
+          <ul class="card">
             <li class="card__item">
               <h3 class="card__title">С тренером</h3>
               <p class="card__desc">12 занятий</p>
@@ -109,7 +103,7 @@
         </div>
       </section>
 
-      <section class="games container" data-test="games">
+      <section class="games" data-test="games">
         <div class="games__container">
           <h2 class="games__title visually-hidden">SUPER GAMES</h2>
           <div class="games__wrapper">
@@ -142,7 +136,8 @@
         </picture>
       </section>
 
-      <section class="juri container" data-test="juri">
+      <section class="juri" data-test="juri">
+        <div class="juri__container">
         <h2 class="juri__title">Жюри</h2>
         <div class="juri__img">
           <img class="juri__image juri__image--one" src="img/juri/anna_pavlova@1x.jpg" srcset="img/juri/anna_pavlova@2x.jpg 2x" width="260" height="300"  alt="Анна Павлова.">
@@ -150,6 +145,7 @@
           <img class="juri__image juri__image--three" src="img/juri/alex_pashkov@1x.jpg" srcset="img/juri/alex_pashkov@2x.jpg 2x" width="260" height="300"  alt="Александр Пашков.">
           <img class="juri__image juri__image--four" src="img/juri/mary_ketova@1x.jpg" srcset="img/juri/mary_ketova@2x.jpg 2x" width="260" height="300"  alt="Мария Кетова.">
         </div>
+      </div>
       </section>
 
       <section class="features" data-test="features">
@@ -171,7 +167,7 @@
                     Площадь
                   </dt>
                   <dd>
-                    Занимайтесь без очередей и толкучки
+                    Занимайтесь без очередей и&nbsp;толкучки
                   </dd>
               </div>
             </dl>
@@ -191,7 +187,7 @@
                     Собственная парковка
                   </dt>
                   <dd>
-                    Вы всегда найдёте место для своей машины на нашей парковке
+                    Вы всегда найдёте место для&nbsp;своей машины на нашей парковке
                   </dd>
                 </div>
               </dl>
@@ -205,7 +201,7 @@
                   Тренажёров
                 </p>
                 <dd>
-                  Современные тренажёры на все группы мышц
+                  Современные тренажёры<br> на все группы мышц
                 </dd>
               </dl>
             </li>
@@ -224,7 +220,7 @@
                     Комфорт
                   </dt>
                   <dd>
-                    Просторные раздевалки, душевые, фен, Wi-Fi, кулеры
+                    Просторные раздевалки, душевые,&nbsp;фен, Wi-Fi, кулеры
                   </dd>
                 </div>
               </dl>
@@ -244,7 +240,7 @@
                     Тренерский опыт
                   </dt>
                   <dd>
-                    Добивайтесь своих целей быстрее<br> с профессиональным тренером
+                    Добивайтесь своих целей быстрее с&nbsp;профессиональным тренером
                   </dd>
               </div>
               </dl>
@@ -307,22 +303,18 @@
               <ul class="faq__list-question">
                 <li class="faq__item-question">
                   <h3>Как стать членом<br> фитнес-центра?</h3>
-                  <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор.<br> При покупке абонемента онлайн, анкета также заполняется онлайн<br> и договор придёт вам на почту.</p>
+                  <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и&nbsp;подписать договор.<br> При покупке абонемента онлайн, анкета также&nbsp;заполняется онлайн<br> и договор придёт вам на почту.</p>
                 </li>
                 <li class="faq__item-question">
                   <h3>Где можно посмотреть расписание?</h3>
-                  <p>1111</p>
-                  <p>1111</p>
                   <p>1111</p>
                 </li>
                 <li class="faq__item-question">
                   <h3>Есть кулеры в центре? Предоставляются<br> полотенца?</h3>
                   <p>2222</p>
-                  <p>1111</p>
-                  <p>1111</p>
                 </li>
                 <li class="faq__item-question">
-                  <h3>Сколько тренеров работает<br> в клубе и какова<br> их квалификация?</h3>
+                  <h3>Сколько тренеров работает<br> в клубе и какова<br> их&nbsp;квалификация?</h3>
                   <p>3333</p>
                 </li>
               </ul>
@@ -330,25 +322,25 @@
         </div>
       </section>
 
-      <section class="reviews container" data-test="reviews">
+      <section class="reviews" data-test="reviews">
         <div class="reviews__container">
           <h2 class="reviews__title">Отзывы</h2>
-          <div class="reviews__wrapper">
+          <div class="reviews__wrapper container">
             <picture>
               <source width="80" height="80" type="image/png" media="(min-width: 768px)" srcset="img/reviews/anna_orlova_tablet@1x.png 1x, img/reviews/anna_orlova_tablet@2x.png 2x">
               <img src="img/reviews/anna_orlova_mobile@1x.png" srcset="img/reviews/anna_orlova_mobile@2x.png 2x" width="68" height="68"  alt="Фото Анна Орлова.">
             </picture>
             <div class="reviews__content">
               <h3>Анна Орлова</h3>
-              <p class="reviews__desc">«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время<br> нет очередей»</p>
+              <p class="reviews__desc">«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал&nbsp;просторный, даже&nbsp;в вечернее время нет&nbsp;очередей»</p>
             </div>
           </div>
         </div>
       </section>
 
-      <div class="wrapper">
+      <div class="wrapper" data-test="form">
 
-      <section class="form" data-test="form">
+      <section class="form">
         <div class="form__wrapper">
           <h2 class="form__title">Бесплатное занятие</h2>
           <form class="form__application" action="https://echo.htmlacademy.ru/" method="post">
@@ -398,7 +390,7 @@
           <picture>
             <source width="130" height="26" type="image/svg+xml" media="(min-width: 1366px)" srcset="img/logo_desktop.svg">
             <source width="110" height="22" type="image/svg+xml" media="(min-width: 768px)" srcset="img/logo_tablet.svg">
-            <img class="footer__logo logo-nav__image" src="img/logo_mobile.svg" width="100" height="20" alt="Логотип SUPERGYM.">
+            <img class="footer__logo" src="img/logo_mobile.svg" width="100" height="20" alt="Логотип SUPERGYM.">
           </picture>
           <nav class="footer-nav">
             <div class="footer-nav__wrapper container">

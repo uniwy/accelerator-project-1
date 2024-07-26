@@ -1,16 +1,12 @@
 .offers {
-  margin-top: 40px;
-  margin-bottom: 40px;
-
+  padding: 40px 0;
 
   @media (min-width: $tablet-width) {
-    margin-top: 60px;
-    margin-bottom: 60px;
+    padding: 60px 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    padding: 100px 0;
   }
 }
 
@@ -87,6 +83,32 @@
     top: 18px;
     background-color: $base-background-color;
   }
+
+  &:hover {
+    color: $secondary-color-text;
+    opacity: 0.5;
+  }
+
+  &:focus {
+    padding: 10px;
+    width: 93px;
+    height: 34px;
+    color: $secondary-color-text;
+    border: 1px solid #fff;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  &:active {
+    color: $secondary-color-text;
+  }
+
+  &:disabled {
+    color: $secondary-color-text;
+    opacity: 0.3;
+  }
 }
 
 .offers__image {
@@ -118,4 +140,3 @@
     align-self: flex-end;
   }
 }
-

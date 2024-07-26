@@ -4,6 +4,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     padding: 60px 0;
+    justify-content: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -13,9 +14,12 @@
 
 .games__container {
   padding: 40px;
+  margin: 0 auto;
+  width: 290px;
   background-color: $banner_background-color;
 
   @media (min-width: $tablet-width) {
+    margin: 0;
     width: 300px;
     height: 348px;
   }
@@ -62,6 +66,7 @@
     line-height: 96px;
   }
 }
+
 .games__info {
   margin: 0 1px 0 0;
   width: 56px;
@@ -92,13 +97,13 @@
     top: 22px;
     background-color: $base-background-color;
 
-  @media (min-width: $tablet-width) {
-    top: 25px;
-  }
+    @media (min-width: $tablet-width) {
+      top: 25px;
+    }
 
-  @media (min-width: $desktop-width) {
-    top: 29px;
-  }
+    @media (min-width: $desktop-width) {
+      top: 29px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -107,9 +112,9 @@
     line-height: 24px;
   }
 
-    @media (min-width: $desktop-width) {
-      margin-bottom: 12px;
-    }
+  @media (min-width: $desktop-width) {
+    margin-bottom: 12px;
+  }
 }
 
 .games__description {
@@ -183,7 +188,6 @@
   @media (min-width: $desktop-width) {
     width: 340px;
     margin-bottom: 30px;
-
   }
 }
 
@@ -195,6 +199,29 @@
   text-transform: uppercase;
   color: $secondary-color-text;
 
+  &:hover {
+    background-color: $base-background-color;
+    color: $add-color-text;
+  }
+
+  &:focus {
+    background-color: $base-background-color;
+    opacity: 0.8;
+    color: $add-color-text;
+    border: 2px solid #000000;
+  }
+
+  &:active {
+    background-color: $base-background-color;
+    color: $base-color-text;
+  }
+
+  &:disabled {
+    background-color: transparent;
+    color: $secondary-color-text;
+    color: rgba(250, 250, 250, 0.5);
+  }
+
   @media (min-width: $tablet-width) {
     padding: 24px;
     width: 220px;
@@ -205,4 +232,8 @@
     padding: 26px;
     width: 340px;
   }
+}
+
+.games__image {
+  margin: 0 auto;
 }

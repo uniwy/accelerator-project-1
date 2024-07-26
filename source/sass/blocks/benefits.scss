@@ -3,19 +3,6 @@
   border: 7px solid;
   border-image: linear-gradient(136deg, #d10a42 0%, #00359f 100%) 10;
 
-  @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: column;
-    width: 324px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 560px;
-    height: 174px;
-  }
-}
-
-.benefits {
   h3 {
     margin-top: 0;
     margin-bottom: 20px;
@@ -31,32 +18,43 @@
       text-align: left;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    width: 324px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 560px;
+    height: 174px;
+  }
 }
 
-  .benefits p {
-      margin-top: 0;
-      margin-bottom: 20px;
-      font-weight: 300;
-      text-align: center;
-      color: #1c3374;
+.benefits p {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: 300;
+  text-align: center;
+  color: #1c3374;
 
-      @media (min-width: $tablet-width) {
-        margin-bottom: 30px;
-        height: 48px;
-        font-size: 16px;
-        line-height: 24px;
-        text-align: left;
-      }
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+    height: 48px;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+  }
 
-      @media (min-width: $desktop-width) {
-        margin-bottom: 40px;
-        height: 24px;
+  @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
+    height: 24px;
 
-        br {
-          display: none;
-        }
-      }
+    br {
+      display: none;
     }
+  }
+}
 
 .benefits__button {
   position: relative;
@@ -72,6 +70,14 @@
   text-decoration: none;
   border: none;
 
+  &::before {
+    position: absolute;
+    content: "";
+    top: 18px;
+    border: 1px solid #74819c;
+    width: 100%;
+  }
+
   &:hover {
     opacity: 0.8;
   }
@@ -80,20 +86,21 @@
     padding: 10px;
     width: 93px;
     height: 34px;
+    color: #1c3374;
     border: 1px solid #1c3374;
-  }
 
-
-  &::before {
-    position: absolute;
-    content: "";
-    top: 18px;
-    border: 1px solid #74819c;
-    width: 100%;
-
-    &:focus {
+    &::before {
       display: none;
     }
+  }
+
+  &:active {
+    color: #1c3374;
+  }
+
+  &:disabled {
+    color: $secondary-color-text;
+    opacity: 0.3;
   }
 
   @media (min-width: $tablet-width) {

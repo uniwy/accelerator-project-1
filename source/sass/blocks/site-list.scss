@@ -15,6 +15,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: 1px;
     margin-left: 169px;
     width: 750px;
     gap: 82px;
@@ -26,6 +27,26 @@
   line-height: 20px;
   color: $secondary-color-text;
   text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+    color: $secondary-color-text;
+  }
+
+  &:focus {
+    width: 60px;
+    height: 32px;
+    border: 1px solid #fff;
+    color: $secondary-color-text;
+  }
+
+  &:active {
+    color: $secondary-color-text;
+  }
+
+  &:disabled {
+    color: rgba (250px, 250px, 250px, 0.4)
+  }
 
   @media (min-width: $tablet-width) {
     line-height: 22px;
