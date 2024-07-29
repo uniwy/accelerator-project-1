@@ -25,7 +25,7 @@
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background-color: #030A1A;
+    background-color: #030a1a;
     mask-repeat: no-repeat;
     mask-position: center;
     mask-size: 14px 14px;
@@ -41,21 +41,21 @@
 
   &--vkontakte {
     &::before {
-    mask-image: url("/__spritemap#sprite-vk-view");
+      mask-image: url("/__spritemap#sprite-vk-view");
+    }
   }
-}
 
   &--ok {
     &::before {
-    mask-image: url("/__spritemap#sprite-ok-view");
+      mask-image: url("/__spritemap#sprite-ok-view");
+    }
   }
-}
 
   &--reddit {
     &::before {
-    mask-image: url("/__spritemap#sprite-reddit-view");
+      mask-image: url("/__spritemap#sprite-reddit-view");
+    }
   }
-}
 
   &:hover {
     background-color: #74819c;

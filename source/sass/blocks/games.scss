@@ -16,7 +16,7 @@
   padding: 40px;
   margin: 0 auto;
   width: 290px;
-  background-color: $banner_background-color;
+  background-color: $banner-background-color;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -218,7 +218,6 @@
 
   &:disabled {
     background-color: transparent;
-    color: $secondary-color-text;
     color: rgba(250, 250, 250, 0.5);
   }
 

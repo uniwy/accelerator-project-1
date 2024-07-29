@@ -156,7 +156,6 @@
   }
 
   @media (min-width: $desktop-width) {
-
     &::after {
       width: 100px;
       height: 100px;
@@ -165,7 +164,6 @@
       right: 633px;
     }
   }
-
 }
 
 .about__video iframe {
