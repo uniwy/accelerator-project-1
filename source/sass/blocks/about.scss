@@ -131,16 +131,48 @@
   width: 100%;
   height: 170px;
   border: none;
+  z-index: 0;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 72px;
+    height: 72px;
+    background-image: url("/img/button_mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    bottom: 49px;
+    right: 124px;
+    z-index: 1;
+  }
 
   @media (min-width: $tablet-width) {
     height: 0;
+
+    &::after {
+      bottom: 84px;
+      right: 348px;
+    }
   }
+
+  @media (min-width: $desktop-width) {
+
+    &::after {
+      width: 100px;
+      height: 100px;
+      background-image: url("/img/button_desktop.svg");
+      bottom: 66px;
+      right: 633px;
+    }
+  }
+
 }
 
 .about__video iframe {
   width: 320px;
   height: 170px;
   margin: 0 auto;
+
 
   @media (min-width: $tablet-width) {
     position: absolute;
